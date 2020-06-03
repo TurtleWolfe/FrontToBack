@@ -1,3 +1,17 @@
+# Front To Back
+
+```bash
+mkdir newproject
+cd newproject
+npx create-react-app client --use-npm
+npx express-generator --view=ejs --git server
+sudo rm -r /client.git
+git init
+git add .
+git add remote
+git push
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,0 +1,22 @@
+version: "2.4"
+
+services:
+  client:
+    image: client
+    build: ./client
+    environment:
+      NODE_ENV: production
+    ports:
+      # - 3000
+      - 3000:3000
+    stdin_open: true
+    tty: true
+
+  server:
+    image: server
+    build: ./server
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3001:3000
+      # - 3001
